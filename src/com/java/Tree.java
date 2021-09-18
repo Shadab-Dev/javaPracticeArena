@@ -2,22 +2,7 @@ package com.java;
 
 import java.util.*;
 
-//Definition for a binary tree node.
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {}
-
-    TreeNode(int val) { this.val = val; }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-      this.val = val;
-      this.left = left;
-      this.right = right;
-    }
-}
+//Definition for a binary tree node
 
 public class Tree {
     TreeNode root;
@@ -120,14 +105,13 @@ public class Tree {
         traverseLeft(root.right, output);
     }
 
-    private void traverseRight(TreeNode root, List<Integer> output){
+    private void traverseRight(TreeNode root, List<Boolean> output){
         if(root==null) return;
         output.add(true);
         output.add(root.right!=null);
         output.add(root.left!=null);
         traverseRight(root.right, output);
         traverseRight(root.left, output);
-        if(root.left!=null) output.add(root.left.val) else output.add(null);
     }
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
