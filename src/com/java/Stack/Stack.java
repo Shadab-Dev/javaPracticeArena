@@ -30,7 +30,12 @@ public class Stack {
         System.out.println("Top Index: " + top + ", Top Element: " + arr.get(top));
     }
 
+    public void leanPrint() {
+        System.out.println(arr);
+    }
+
     public int peek() {
+        if(top == -1) return -1;
         return arr.get(top);
     }
 }
