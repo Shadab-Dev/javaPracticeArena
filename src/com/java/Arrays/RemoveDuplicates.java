@@ -11,6 +11,7 @@ public class RemoveDuplicates {
     }
 
     private static int[] findDistinct(int[] arr) {
+        // we create a trailing pointer to point to the last distinct element
         int res = 1;
         for (int i = 1; i < arr.length; i++) {
             if(arr[i] != arr[res-1]){

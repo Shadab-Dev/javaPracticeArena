@@ -3,7 +3,7 @@
 // for arr = {3, 4, 8, -9, 20, 6}, eq point is 20
 package com.java.Arrays;
 
-public class PrefixSum1 {
+public class EquilibriumPoint {
     public static void main(String[] args) {
         int[] arr = {3, 4, 8, -9, 20, 6};
         int eqPoint = findEquilibriumPoint(arr);
