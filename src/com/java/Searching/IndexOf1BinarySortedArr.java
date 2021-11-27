@@ -1,7 +1,7 @@
 // Given an infinite binary array which is sorted, find the first index of 1.
 // arr = { 0, 0, 0, 1, 1, 1.....
 // index should be 3
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class IndexOf1BinarySortedArr {
     public static void main(String[] args) {

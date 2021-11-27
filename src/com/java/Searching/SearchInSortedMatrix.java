@@ -1,6 +1,6 @@
 // Given a 2D array which is sorted both row-wise and column-wise, return the index of the elem
 // https://www.youtube.com/watch?v=VS0BcOiKaGI&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=20
-package com.java.BinarySearch;
+package com.java.Searching;
 
 import java.util.Arrays;
 

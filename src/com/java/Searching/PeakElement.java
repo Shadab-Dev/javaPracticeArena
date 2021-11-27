@@ -2,7 +2,7 @@
 // A peak element is the element which is greater than both its neighbour elements
 // here the answer should be 30. If there are amore than one peak elements in the array, return any one.
 // https://www.youtube.com/watch?v=OINnBJTRrMU&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=17&t=425s
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class PeakElement {
     public static void main(String[] args) {

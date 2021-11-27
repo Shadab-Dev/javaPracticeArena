@@ -2,7 +2,7 @@
 // so the element can be at 3 positions instead of just at one.
 // find the element in this arr
 // YT URL: https://www.youtube.com/watch?v=W3-KgsCVH1U&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=9
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class FindElementInNearlySortedArr {
     public static void main(String[] args) {

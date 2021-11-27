@@ -2,7 +2,7 @@
 // arr = { 7, 8, 9, 1, 2, 3, 4, 5, 6 };
 // answer should be 3
 // YT URL = https://www.youtube.com/watch?v=4WmTRFZilj8&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=7
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class NumberOfRotations {
     public static void main(String[] args) {

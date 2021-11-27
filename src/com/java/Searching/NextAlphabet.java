@@ -3,7 +3,7 @@
 // next alphabet of e will be f
 // one point to note is even if the elem is present in the array, then also we need to fetch the next alphabet of the elem
 // here, if elem is d, then also we need to return f even when d is present
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class NextAlphabet {
     public static void main(String[] args) {

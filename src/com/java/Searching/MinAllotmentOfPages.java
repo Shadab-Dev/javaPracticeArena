@@ -6,7 +6,7 @@
 // given arr = {10, 20, 30, 40}, s = 2
 // min pages will be 60
 // https://www.youtube.com/watch?v=2JSQIhPcHQg&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=21
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class MinAllotmentOfPages {
     public static void main(String[] args) {

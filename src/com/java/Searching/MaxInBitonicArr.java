@@ -2,7 +2,7 @@
 // arr = {10, 20, 30, 40, 29, 18, 15}, here the answer should be 40
 // this is exactly same as peak element, here also if you observe, we need to find the peak
 // https://www.youtube.com/watch?v=BrrZL1RDMwc&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=18
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class MaxInBitonicArr {
     public static void main(String[] args) {

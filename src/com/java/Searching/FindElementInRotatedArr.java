@@ -1,12 +1,12 @@
 // Given an arr which is rotated, search for a given element
 // YT URL: https://www.youtube.com/watch?v=Id-DdcWb5AU&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=8
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class FindElementInRotatedArr {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int elem = 8;
-        int index = findSmallestIndex(arr, elem);
+        int index = findSmallestIndex(arr);
         int left = index - 1;
         int right = index + 1;
         int leftFound = (left > -1) ? binarySearch(arr, elem, 0 , left) : -1;
@@ -24,7 +24,7 @@ public class FindElementInRotatedArr {
         return -1;
     }
 
-    private static int findSmallestIndex(int[] arr, int elem) {
+    private static int findSmallestIndex(int[] arr) {
         if(arr.length == 0) return -1;
         int start = 0;
         int end = arr.length-1;

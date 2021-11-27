@@ -2,7 +2,7 @@
 // Bitonic = an array which keeps on increasing and then starts decreasing at one point
 // arr = {10, 20, 30, 40, 29, 18, 15}, key = 30, answer should be 2
 // https://www.youtube.com/watch?v=IjaP8qt1IYI&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=19
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class SearchInBitonicArr {
 

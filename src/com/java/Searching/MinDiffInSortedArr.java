@@ -2,7 +2,7 @@
 // if arr = {4, 6, 10} and given elem is 7, then the absolute difference for each elem will be {3, 1, 3}
 // so the answer in this case will be 1 and the output should be 6
 // https://www.youtube.com/watch?v=3RhGdmoF_ac&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=15
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class MinDiffInSortedArr {
     public static void main(String[] args) {

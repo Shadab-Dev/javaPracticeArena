@@ -2,7 +2,7 @@
 // eg: { 10 , 9 , 8 , 7, 6, 5 }
 // Video URL: https://www.youtube.com/watch?v=YbkELwnGRdo&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=3
 
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class DescendingSortedArray {
 

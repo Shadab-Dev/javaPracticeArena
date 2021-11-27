@@ -1,6 +1,6 @@
 // Assume that a given array is infinite in size. Search for an element in this array.
 // https://www.youtube.com/watch?v=FzvK5uuaki8&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=13
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class SearchInfiniteArray {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 // Given a sorted array whose sorting order is not given, hence we do not know whether it is sorted in ASC or DESC.
 // YT URL: https://www.youtube.com/watch?v=gY2b-Q6wDEM&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=4
 
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class OrderAgnosticSearch {
     public static void main(String[] args) {

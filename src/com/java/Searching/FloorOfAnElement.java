@@ -2,7 +2,7 @@
 // Floor of an element is the greatest element in the array which is smaller than the given element
 // for arr = {1, 2, 4, 5, 6, 8, 9}
 // Floor of 7 will be 6
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class FloorOfAnElement {
     public static void main(String[] args) {

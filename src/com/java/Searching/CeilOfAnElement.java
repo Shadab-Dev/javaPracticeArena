@@ -1,7 +1,7 @@
 // Ceil of an element is the smallest element which is greater than 5
 // arr = {1 ,2 ,3, 4, 6, 7, 8 };
 // ceil of 5 will be 6
-package com.java.BinarySearch;
+package com.java.Searching;
 
 public class CeilOfAnElement {
     public static void main(String[] args) {
