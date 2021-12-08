@@ -1,43 +1,37 @@
-// Given an array of stock prices, {100, 80, 60, 70, 60, 75, 85}
-// Find the span of a stock price. Return an array which will contain the no. of days the stock price was at top.
-// Here the answer will be {1, 1, 1, 2, 1, 4, 6}
+// The stock span problem is a financial problem where we have a series of n daily price quotes for a stock and we need to calculate the span of stock’s price for all n days.
+// The span Si of the stock’s price on a given day i is defined as the maximum number of consecutive days just before the given day, for which the price of the stock on the current day is less than or equal to its price on the given day.
+// For example, if an array of 7 days prices is given as {100, 80, 60, 70, 60, 75, 85},
+// then the span values for corresponding 7 days are {1, 1, 1, 2, 1, 4, 6}.
+// Input: price[] = [100 80 60 70 60 75 85]
+// Output: 1 1 1 2 1 4 6
 package com.java.Stack;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class StockSpan {
     public static void main(String[] args) {
-        int[] arr = {100, 80, 60, 70, 110, 75, 85};
-        int[] output = findStockSpan(arr);
-        System.out.println(Arrays.toString(output));
+        int[] arr = {10, 4, 5, 90, 120, 80};
+        int[] result = findStockSpan(arr);
+        System.out.println(Arrays.toString(result));
     }
 
     private static int[] findStockSpan(int[] arr) {
-        int[] output = new int[arr.length];
-        Stack st = new Stack();
-
-        // since we want the greater elem on the left, we run a normal loop
-        for (int i = 0; i < arr.length; i++) {
-            // If the stack is empty then add 1 to output and push the arr elem index in the stack
-            if(st.peek() == -1) {
-                output[i] = 1;
-                st.push(i);
-                // If the top elem is greater than arr elem, then that is the nearest greater elem
-            } else if(arr[st.peek()] > arr[i]) {
-                output[i] = i - st.peek();
-                st.push(i);
+        if(arr.length<2) return arr;
+        int[] result = new int[arr.length];
+        Stack<Integer> stack = new Stack<>();
+        stack.push(0);
+        result[0] = 1;
+        for (int i = 1; i < arr.length; i++) {
+            if(stack.isEmpty()) {
+                stack.push(i);
+                result[i] = 1;
             } else {
-                // If the top elem is smaller, then keep popping until stack is empty,
-                // or you find the top elem which is greater than arr elem
-                while (st.peek()!=-1 && arr[st.peek()]<=arr[i]) {
-                    st.pop();
-                }
-                if(st.peek() == -1) output[i] = i;
-                else if(arr[st.peek()] > arr[i]) output[i] = i - st.peek();
-                st.push(i);
+                while (!stack.isEmpty() && arr[stack.peek()] <= arr[i]) stack.pop();
+                result[i] = (stack.isEmpty()) ? i + 1 : i - stack.peek();
+                stack.push(i);
             }
-
         }
-        return output;
+        return result;
     }
 }
