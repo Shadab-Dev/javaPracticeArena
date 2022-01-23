@@ -4,7 +4,7 @@ package com.java.Arrays;
 
 public class MajorityElement {
     public static void main(String[] args) {
-        int[] arr = {3, 7, 4, 7, 7, 5};
+        int[] arr = {3, 2, 3};
         int majorityElem = findIndexOfMajority(arr);
         System.out.println(majorityElem);
     }
