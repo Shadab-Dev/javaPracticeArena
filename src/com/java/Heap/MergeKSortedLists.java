@@ -1,6 +1,5 @@
 package com.java.Heap;
 
-import java.util.List;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLists {

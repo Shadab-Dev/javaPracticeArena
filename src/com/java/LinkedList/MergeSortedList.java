@@ -8,7 +8,7 @@ public class MergeSortedList {
         LinkedList list2 = new LinkedList(1);
         list2.add(3);
         list2.add(4);
-        list1.head = mergeTwoLists(list1.head, list2.head);
+        list1.head = mergeTwoListsRecursion(list1.head, list2.head);
         list1.print();
     }
 
@@ -43,5 +43,27 @@ public class MergeSortedList {
             }
         }
         return start.next;
+    }
+
+    public static ListNode mergeTwoListsRecursion(ListNode list1, ListNode list2) {
+        if(list1 == null) return list2;
+        if(list2 == null) return list1;
+        ListNode head;
+        ListNode temp;
+        if(list1.val <= list2.val) {
+            head = list1;
+            while (list1.next != null && list1.next.val <= list2.val)
+                list1 = list1.next;
+            temp = list1.next;
+            list1.next = list2;
+            return mergeTwoListsRecursion(head, temp);
+        } else {
+            head = list2;
+            while (list2.next != null && list2.next.val <= list1.val)
+                list2 = list2.next;
+            temp = list2.next;
+            list2.next = list1;
+            return mergeTwoListsRecursion(head, temp);
+        }
     }
 }
