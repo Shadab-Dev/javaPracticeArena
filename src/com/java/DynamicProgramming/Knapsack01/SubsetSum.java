@@ -1,4 +1,4 @@
-package com.java.DynamicProgramming;
+package com.java.DynamicProgramming.Knapsack01;
 
 public class SubsetSum {
     public static void main(String[] args) {
